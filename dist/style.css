@@ -993,7 +993,7 @@ footer hr {
 .logo-container .logo-img {
   display: flex;
   padding: 7% 1% 1% 1%;
-  width: 100%;
+  width: 90%;
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1299,6 +1299,10 @@ footer hr {
   .slide-content {
     margin: 0 5% 0;
   }
+  .logo-container .logo-img {
+    width: 70%;
+  }
+
   .container {
     padding: 0 15% 10%;
     display: flex;
