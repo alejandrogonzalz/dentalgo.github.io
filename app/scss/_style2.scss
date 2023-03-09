@@ -1,0 +1,302 @@
+/******************************************************/
+/****************** VIDEO SECTION *********************/
+/******************************************************/
+
+.section-0{
+    position: relative;
+    width: 100%;
+    background: white;
+}
+
+.circle-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.circle{
+    position: relative;
+    margin: auto;
+    background: linear-gradient(to right, var(--dark-main), var(--main));
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 0 var(--light-main);    
+}
+
+.circle::before{
+    content: "\201C";
+    color: var(--dark-silver);
+    font-family: sans-serif, serif;
+    font-size: 20rem;
+    line-height: 1;
+    opacity: .9;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+}
+
+.circle-txt h1{
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 1);
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dg-video{
+    border: none;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.dg-video .vjs-control-bar {
+    background: white;
+    color: var(--dark-main);
+}
+
+.dg-video .vjs-play-progress, .dg-video .vjs-volume-level{
+    background: var(--light-main);
+}
+
+.dg-video .vjs-big-play-button{
+    background: rgba(79, 103, 109, 1);
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 100%;
+    border: none;
+}
+
+.dg-video .vjs-big-play-button:hover{
+    background: rgba(79, 103, 109, 1);
+}
+
+.video-js:hover .vjs-big-play-button {
+    background: rgba(79, 103, 109, 0.7);
+}
+
+
+
+
+/******************************************************/
+/**************** SERVICES SECTION ********************/
+/******************************************************/
+
+.section-1{
+    position: relative;
+    background-color: var(--grey-bg);
+    border-top: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+    z-index: 0;
+}
+
+.service-container{
+    margin: 5% 0;
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-title{
+    margin: 0 5% 0;
+}
+
+.service-title h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    text-shadow: -1px -1px 1px rgba(134, 134, 134, 0.8);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.service-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 220px);
+    gap: 1rem;
+}
+
+.service-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h2, .services p{
+    color: black;
+    text-align: center; 
+}
+
+.services h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.info-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-content, .info-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.7rem;
+    aspect-ratio: 1; 
+}
+
+.icon-image .icon-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services {
+    position: relative;
+    justify-content: center;
+    background-color:  white;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+    .inner{
+        background-color: black;
+        z-index: -1;
+        border-radius: 10px;
+        height: inherit;
+        width: inherit;
+        clip-path: inset(0% 0% 0% 100%);
+        transition: clip-path .6s ease-in-out;
+        
+    }
+
+    &:hover .inner, &:active .inner{
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+.services-image{
+    height: 100%;
+    width: 100%;
+}
+
+.services-image .services-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+
+
+//4K-XXL DEVICES 
+@media (min-width: 2000px) {
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    
+    .service-container{
+        width: 90%;
+        flex-direction: column;
+    }
+ 
+    .circle::before{
+        font-size: 16rem;
+    }
+
+    .circle-txt h1{
+        font-size: 1.45rem;
+    }
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+    .circle-container{
+        height: 60vh;
+    }
+
+    .circle{
+        width: 80%;
+    }
+
+    .video-container{
+        height: 80vh;
+    }
+
+    .service-container{
+        width: 95%;
+        flex-direction: column;
+    }
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    .service-container{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 320px);
+    }
+    
+
+}
+
+// X-Small devices (portrait phones, less than 576px) .btn-primary:hover
+@media (max-width: 575.98px) { 
+
+
+}
+

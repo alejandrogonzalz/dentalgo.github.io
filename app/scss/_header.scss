@@ -1,0 +1,171 @@
+/******************************************************/
+/******************** HEADER **************************/
+/******************************************************/
+
+// ====== SIDEBAR ======
+.sidebar{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 88px;
+    padding: 10px 14px;
+    background: #f5f5f5;
+    box-shadow: 0 0.125em 0.5em rgb(0 0 0 / 15%);
+    transition: all 0.3s ease;
+}
+
+// .sidebar.close{
+//     width: 88px;
+// }
+
+#sidebar.active{
+    width:250px;
+}
+
+.sidebar ul{
+    margin: 30px 0 0 0;
+}
+
+.sidebar li{
+    height: 50px;
+    margin: 10px 0 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 30px;
+}
+
+.sidebar li .icon,
+.sidebar li .text{
+    color: #404040;
+}
+
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar header .logo-header-container{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .logo-header-container .logo-tooth{
+    width: 57px;
+}
+
+.sidebar header .logo-header-container .logo-text{
+    height: 50px;
+    padding-left: 8px;
+}
+
+// ====== Reusable CSS ======
+.sidebar header .image-l{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    background: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+}
+
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+
+.sidebar .text, 
+.sidebar .logo-text{
+    opacity: 0;
+}
+
+.sidebar.active .text, 
+.sidebar.active .logo-text{
+    opacity: 100;
+}
+
+.sidebar.active header .toggle{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.sidebar header .toggle:hover{
+    background: #4f676d;
+}
+
+.sidebar li a:hover{
+    background: #4f676d;
+}
+
+.sidebar li a:hover .icon, 
+.sidebar li a:hover .text {
+    color: #f5f5f5;
+}
+
+
+@media (max-width: 767.98px) {
+
+    // .sidebar.close{
+    //     width: 0px;
+    //     padding: 10px 0px;
+    // }
+
+    // .sidebar.close .icon, 
+    // .sidebar.close .logo-header-container {
+    // opacity: 0;
+    // }
+
+    .sidebar header .toggle{
+        right: -50px;
+    }
+
+    .sidebar.active .toggle{
+        right: -25px;
+    }
+
+    .sidebar{
+        left: -90px;
+    }
+
+    .sidebar.active{
+        left: 0;
+    }
+
+    body{  
+        padding-left: 0px;
+    }
+
+}
+

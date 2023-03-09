@@ -244,16 +244,17 @@ ul {
 }
 
 @media (max-width: 767.98px) {
-  .sidebar.close {
-    width: 0px;
-    padding: 10px 0px;
+  .sidebar header .toggle {
+    right: -50px;
   }
-  .sidebar.close .icon,
-  .sidebar.close .logo-header-container {
-    opacity: 0;
+  .sidebar.active .toggle {
+    right: -25px;
   }
-  .sidebar.close header .toggle {
-    right: -30px;
+  .sidebar {
+    left: -90px;
+  }
+  .sidebar.active {
+    left: 0;
   }
   body {
     padding-left: 0px;
