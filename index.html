@@ -1,0 +1,776 @@
+
+
+<!-- ==== HTML STARTS ==== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalGo</title>
+    <!-- Bootstrap CSS & BoxIcons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.css" integrity="sha256-UgiyZCTZggzgafOcD2wPMh1qoD00B/GiLu9UEp+ZOAo=" crossorigin="anonymous">
+
+
+    <!-- Video CSS -->
+    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/style.css">
+
+</head>
+<body>  
+        <nav class="sidebar" id="sidebar">
+            <header>
+                <div class="logo-header-container hidden">
+                    <span class="image-l">
+                        <img src="app/content/logos/logo-notext.png" alt="" class="logo-tooth">
+                    </span>
+
+                    <div class="logo-text-container">
+                        <span class="image-l">
+                            <img src="app/content/logos/dentalgo.png" alt="" class="logo-text">
+                        </span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle' id="toggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="nav-link hidden">
+                            <a href="#">
+                                <i class='bx bxs-home icon'></i>
+                                <span class="text nav-text">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-link hidden">
+                            <a href="#servicios">
+                                <i class='bx bx-list-ul icon' ></i>
+                                <span class="text nav-text">Servicios</span>
+                            </a>
+                        </li>
+                        <li class="nav-link hidden">
+                            <a href="#">
+                                <i class='bx bxs-contact icon' ></i>
+                                <span class="text nav-text">Contactos</span>
+                            </a>
+                        </li>
+                        <li class="nav-link hidden">
+                            <a href="#contact">
+                                <i class='bx bxs-book icon'></i>
+                                <span class="text nav-text">Haz tu cita</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>               
+                <!-- <div class="bottom-content">
+                    <div class="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-google"></i>
+                    </div>
+                </div> -->
+            </div>
+
+        </nav>
+    
+    <!-- START CONTAINER FLUID -->
+    <div class="container-fluid p-0" style="overflow: hidden;"> 
+        <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12
+                        order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2
+                        nopadding">
+
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators move-left">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <div class="overlay-image" style="background-image:url(app/content/carousel/abajo-1.jpeg);"></div>
+                            <div class="container">
+                                <h1 class="hidden">¿Quiénes somos?</h1>
+                                <p class="hidden">DentalGo es un consultorio de salud bucodental comprometido con la innovación odontológica, que integra a los mejores profesionales de la salud, dedicados a brindar la mejor atención a ti y a tu familia.</p>
+                                <a href="#contact" class="btn btn-lg btn-primary hidden">
+                                    ¡Haz tu cita!
+                                </a>
+                            </div>    
+                        </div>
+                        <div class="carousel-item" data-interval="1000">
+                            <div class="overlay-image" style="background-image:url(app/content/carousel/abajo-2.jpeg);"></div>
+                            <div class="container">
+                                <h1>¿Quiénes somos?</h1>
+                                <p>DentalGo es un consultorio de salud bucodental comprometido con la innovación odontológica, que integra a los mejores profesionales de la salud, dedicados a brindar la mejor atención a ti y a tu familia.</p>
+                                <a href="#contact" class="btn btn-lg btn-primary">
+                                    ¡Haz tu cita!
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-interval="1000">
+                            <div class="overlay-image" style="background-image:url(app/content/carousel/arriba-1.jpeg);"></div>
+                            <div class="container">
+                                <h1>¿Quiénes somos?</h1>
+                                <p>DentalGo es un consultorio de salud bucodental comprometido con la innovación odontológica, que integra a los mejores profesionales de la salud, dedicados a brindar la mejor atención a ti y a tu familia.</p>
+                                <a href="#contact" class="btn btn-lg btn-primary">
+                                    ¡Haz tu cita!
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" data-interval="1000">
+                            <div class="overlay-image" style="background-image:url(app/content/carousel/recepcion-1.jpeg);"></div>
+                            <div class="container">
+                                <h1>¿Quiénes somos?</h1>
+                                <p>DentalGo es un consultorio de salud bucodental comprometido con la innovación odontológica, que integra a los mejores profesionales de la salud, dedicados a brindar la mejor atención a ti y a tu familia.</p>
+                                <a href="#contact" class="btn btn-lg btn-primary">
+                                    ¡Haz tu cita!
+                                </a>
+                            </div>
+                        </div>             
+                        
+                                                
+                        <div class="carousel-item" data-interval="1000">
+                            <div class="overlay-image" style="background-image:url(app/content/carousel/recepcion-2.jpeg);"></div>
+                            <div class="container">
+                                <h1>¿Quiénes somos?</h1>
+                                <p>DentalGo es un consultorio de salud bucodental comprometido con la innovación odontológica, que integra a los mejores profesionales de la salud, dedicados a brindar la mejor atención a ti y a tu familia.</p>
+                                <a href="#contact" class="btn btn-lg btn-primary">
+                                    ¡Haz tu cita!
+                                </a>
+                            </div>
+                        </div>        
+                        
+                        <div class="carousel-item" data-interval="1000">
+                            <div class="overlay-image" style="background-image:url(app/content/edificio.png);"></div>
+                            <div class="container">
+                                <h1>¿Quiénes somos?</h1>
+                                <p>DentalGo es un consultorio de salud bucodental comprometido con la innovación odontológica, que integra a los mejores profesionales de la salud, dedicados a brindar la mejor atención a ti y a tu familia.</p>
+                                <a href="#contact" class="btn btn-lg btn-primary">
+                                    ¡Haz tu cita!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>        
+            
+
+            </div>
+
+
+            <!-- CARD VISIBLE ONLY ON MEDIUM AND SMALL DEVICES START TAG-->
+            <div class="col-md-7 col-sm-12 col-12
+                        order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2
+                        d-lg-none d-xl-none
+                        nopadding rspace-3">        
+                        
+                <div class="slide-container swiper nopadding">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="app/content/Yatzue-1.png" alt="" class="card-img">
+                                    </div>
+                                </div>    
+                                <div class="card-content">
+                                    <h2 class="name">Dra. Eli Yatzue González Almazán</h2>       
+                                    <p class="description">Médico Cirujano Dentista, Terapia Periodontal,U.D.M, Facultad de Odontología,Ced. Prof. 10716130</p>                                             
+                                    <button class="button-card"> 
+                                        <i class='bx bxs-phone button-phone'></i>
+                                        <span>Contacto</span>
+                                    </button>
+                                </div>
+                         </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="app/content/Yatzue-2.png" alt="" class="card-img">
+                                    </div>
+                                </div>    
+                                <div class="card-content">
+                                    <h2 class="name">Dra. Eli Yatzue González Almazán</h2>       
+                                    <p class="description">Médico Cirujano Dentista, Terapia Periodontal,U.D.M, Facultad de Odontología,Ced. Prof. 10716130</p>                                             
+                                    <button class="button-card"> 
+                                        <i class='bx bxs-phone button-phone'></i>
+                                        <span>Contacto</span>
+                                    </button>
+                                </div>
+                         </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="app/content/Yatzue-3.png" alt="" class="card-img">
+                                    </div>
+                                </div>    
+                                <div class="card-content">
+                                    <h2 class="name">Dra. Eli Yatzue González Almazán</h2>       
+                                    <p class="description">Médico Cirujano Dentista, Terapia Periodontal,U.D.M, Facultad de Odontología,Ced. Prof. 10716130</p>                                             
+                                    <button class="button-card"> 
+                                        <i class='bx bxs-phone button-phone'></i>
+                                        <span>Contacto</span>
+                                    </button>
+                                </div>
+                         </div>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 col-sm-12 col-12
+                order-xl-3 order-lg-3 order-md-3 order-sm-3 order-3
+                d-none d-md-block d-lg-none
+                nopadding rspace-3">  
+                
+                    <div class="circle-container">
+                        <div class="circle">
+                            <div class="circle-txt">
+                                <h1>¡Mejoramos tu vida con una sonrisa a la vez!</h1>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+            </div>             <!-- CARD VISIBLE ONLY ON MEDIUM AND SMALL DEVICES END TAG-->
+
+
+
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 
+                        order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1
+                        nopadding" id="home">
+                
+                <div class="right-col">
+                    <div class="row rspace nopadding">
+                        <div class="logo-container nopadding">
+                            <img src="app/content/logos/logo.png" alt="" class="logo-img">
+                        </div>
+                    </div>
+                    <div class="row rspace-2 nopadding
+                                d-lg-block d-md-none d-sm-none d-none">
+                       
+                        <div class="slide-container-main hidden">    
+                            <div class="slide-container swiper nopadding">
+                                <div class="slide-content">
+                                    <div class="card-wrapper swiper-wrapper">
+                                        <div class="card swiper-slide">
+                                            <div class="image-content">
+                                                <span class="overlay"></span>
+                                                <div class="card-image">
+                                                    <img src="app/content/Yatzue-1.png" alt="" class="card-img">
+                                                </div>
+                                            </div>    
+                                            <div class="card-content">
+                                                <h2 class="name">Dra. Eli Yatzue González Almazán</h2>       
+                                                <p class="description">Médico Cirujano Dentista, Terapia Periodontal,U.D.M, Facultad de Odontología,Ced. Prof. 10716130</p>                                       
+
+                                                <button class="button-card"> 
+                                                    <i class='bx bxs-phone button-phone'></i>
+                                                    <span>Contacto</span>
+                                                </button>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="card swiper-slide">
+                                            <div class="image-content">
+                                                <span class="overlay"></span>
+                                                <div class="card-image">
+                                                    <img src="app/content/Yatzue-2.png" alt="" class="card-img">
+                                                </div>
+                                            </div>    
+                                            <div class="card-content">
+                                                <h2 class="name">Dra. Eli Yatzue González Almazán</h2>       
+                                                <p class="description">Médico Cirujano Dentista, Terapia Periodontal,U.D.M, Facultad de Odontología,Ced. Prof. 10716130</p>                                             
+                                                <button class="button-card"> 
+                                                    <i class='bx bxs-phone button-phone'></i>
+                                                    <span>Contacto</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="card swiper-slide">
+                                            <div class="image-content">
+                                                <span class="overlay"></span>
+                                                <div class="card-image">
+                                                    <img src="app/content/Yatzue-3.png" alt="" class="card-img">
+                                                </div>
+                                            </div>    
+                                            <div class="card-content">
+                                                <h2 class="name">Dra. Eli Yatzue González Almazán</h2>       
+                                                <p class="description">Médico Cirujano Dentista, Terapia Periodontal,U.D.M, Facultad de Odontología,Ced. Prof. 10716130</p>                       
+                                                
+                                                <button class="button-card"> 
+                                                    <i class='bx bxs-phone button-phone'></i>
+                                                    <span>Contacto</span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+        
+
+        <!-- START ROW SECTION-0 -->
+        <div class="row section-0 nopadding"> 
+            
+            <div class="shape-divider"></div>
+
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 
+            nopadding order-2">
+                <div class="video-container">
+                    <video
+                    class="dg-video video-js vjs-16-9 vjs-big-play-centered hidden"
+                    data-setup="{}"
+                    controls
+                    poster="app/content/video/img-video-1.jpg"
+                    id="dg-video">            
+                        <source src="app/content/video/video-promocional.mp4" type="video/mp4">            
+                    </video>            
+                </div>
+            </div>              
+
+            <div class="col-xl-5x col-lg-5 col-md-12 col-sm-12 col-12
+            d-md-none d-lg-block
+            nopadding order-1">
+                
+                <div class="circle-container">
+                    <div class="circle hidden">
+                        <div class="circle-txt">
+                            <h1>¡Mejoramos tu vida con una sonrisa a la vez!</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div> <!-- END ROW SECTION-0 -->
+
+        <!-- START ROW SECTION-1 -->
+        <div class="row section-1 nopadding" id="servicios">
+           
+            <div class="sec-1-container">
+
+                <div class="service-container">
+
+                    <div class="service-title hidden">
+                        <h1>Nuestros <br> Servicios</h1>
+                    </div>
+
+                    <div class="service-grid">
+                        
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/consulta.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Valoración dental</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                            
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/1.webp" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/limpiezas.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Limpiezas dentales</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/Limpieza.jpg" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/empastes.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Empastes dentales</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/empaste.jpg" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/exodoncia.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Exodoncias</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/exodoncia.jpg" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/protesis-fijas.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Prótesis fijas</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/protesis-fija.jpg" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/protesis-removibles.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Prótesis removibles</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/protesis.jpg" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/coronas.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2 class="serv-name">Coronas</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/coron.webp" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/ortodoncia.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Ortodoncia</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/ortodoncia.png" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        <div class="service-wrapper hidden">
+                            <div class="services">
+                                <div class="info-container">
+
+                                    <div class="icon-content">
+                                        <div class="icon-image">
+                                            <img src="app/content/icons/periodoncia.png" alt="" class="icon-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="info-content">
+                                        <h2>Terapia periodontal</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <p>
+                                    </div> 
+                                </div>
+                                    <div class="inner">
+                                        <div class="services-image">
+                                            <img src="app/content/periodoncia.jpg" class="services-img">
+                                        </div>
+                                    </div>                     
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                    
+                </div>
+                
+            </div>  <!-- END SEC-1-CONTAINER -->
+
+        </div> <!-- END ROW SECTION-1 -->
+
+
+        <!-- START ROW SECTION-2 -->
+        <div class="row section-2 nopadding">
+
+            	<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 
+                nopadding order-1">     
+
+                    <div class="map-container">
+                                               
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.391621758347!2d-97.53650907310785!3d25.856585131442504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866f9307ff8544eb%3A0x98bc29a97af80d5e!2sDentalGo!5e0!3m2!1ses!2smx!4v1675885497576!5m2!1ses!2smx"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map hidden"></iframe>
+
+                        <div class="other-container hidden">
+                            <div class="o-wrapper wrapper-left">
+                                <h3>Horarios de atención</h3>
+                                <ul>
+                                    <li>Lunes - Viernes - 9:00 am - 6:00 pm</li>
+                                    <li>Sabádo - 10:00 am - 5:00 pm</li>    
+                                    <li>Domingo - Cerrado</li>
+                                </ul>
+
+                            </div>     
+                            <div class="o-wrapper wrapper-right">
+                                <h3>Números de contacto</h3>
+                                <ul>
+                                    <li>+52 868 102 1923</li>
+                                    <li>+52 868 125 9252</li>
+                                    <li>+52 868 907 0195</li>
+                                </ul>
+                            </div>  
+                                                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 
+                nopadding order-2">   
+
+                    <section class="contact hidden" id="contact">
+                        
+                        <h1 class="heading">Haz tu cita</h1>
+                        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+
+                            <!-- <?php
+                                if(isset($message)){
+                                    foreach($message as $message){
+                                        echo'<p class="message">'.$message.'</p>';
+                                    }
+                                }
+                            ?> -->
+
+                            <span>Su nombre:</span>
+                            <input type="text" name="name" placeholder="Ingrese su nombre" class="box">
+
+                            <span>Su correo:</span>
+                            <input type="email" name="email" placeholder="Ingrese su correo electrónico" class="box">
+
+                            <span>Su número:</span>
+                            <input type="number" name="phone" placeholder="Ingrese su número" class="box">
+
+                            <span>Día de la cita:</span>
+                            <input type="datetime-local" name="date" class="box">
+                            <input type="submit" value="Haz tu cita" name="submit" class="link-btn">
+
+                        </form>
+                        
+                    </section>
+
+                </div>           
+
+        </div> <!-- END ROW SECTION-2 -->
+
+
+
+
+    </div>  <!-- END OF CONTAINER-FLUID  -->
+
+    <footer>
+     
+        <div class="row section-footer nopadding hidden">
+
+            <div class="col">
+                <div class="logo-container-footer">
+                    <img src="app/content/logos/blanco/logo-blanco-H.png" class="logo-img-footer">
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ducimus ullam soluta sapiente? Quas, odio. Alias, quasi! Delectus, nemo accusamus corrupti placeat possimus saepe nisi asperiores, cupiditate, natus ducimus architecto?</p>
+            </div>
+
+            <div class="col">
+                <h3>Consultorio <div class="underline"><span></span></div></h3>
+                <p>Avenida Paseo de la Castellana</p>
+                <p>#348, Esquina, C. Monsanto, H</p>
+                <p>87345 Heroica Matamoros, Tamps</p>
+                <p class="email-id">alex.aga816@gmail.com</p>
+                <p class="phone-id">+52 868 102 1923</p>
+            </div>
+
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contact">Haz tu cita</a></li>
+                    <li><a href="">Contactos</a></li>
+                    <li><a href="">Iconos</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div> </h3>
+                <form id="newsletter" action="">
+                    <i class="bi bi-envelope-fill"></i>
+                    <input type="email" placeholder="Suscríbete a nuestra lista de correo">
+                    <button class="submit" type="submit"><i class="bi bi-arrow-right-square-fill"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-tiktok"></i>
+                    <i class="bi bi-google"></i>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">DentalGo © 2023 - Todos los derechos reservados</p>
+        </div>    
+    </footer>
+
+</body>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.js" integrity="sha256-vCqP5HofCfq/Vp6YJRGzHXFgQbylSYcaWSDQDuE5cK0=" crossorigin="anonymous"></script>
+
+    <!-- Video JS -->
+    <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+
+    <!-- My JS -->
+    <script src="app/js/script.js"></script>
+
+
+</html>
+
+
+
+<!-- ventana modal para hacer lo de haz tu cita -->
+
